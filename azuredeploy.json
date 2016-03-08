@@ -30,9 +30,14 @@
       ],
       "defaultValue": "0"
     },
-    "someAppSetting": {
-      "type": "string",
-      "defaultValue": "Test App Setting Value"
+    "docuSignUsername": {
+      "type": "string"
+    },
+    "docuSignPassword": {
+      "type": "string"
+    },
+    "docuSignIntegratorKey": {
+      "type": "string"
     },
     "repoUrl": {
       "type": "string"
@@ -80,8 +85,16 @@
           "properties": {
             "appSettings": [
               {
-                "name": "someAppSetting",
-                "value": "[parameters('someAppSetting')]"
+                "name": "docuSignUsername",
+                "value": "[parameters('docuSignUsername')]"
+              },
+              {
+                "name": "docuSignPassword",
+                "value": "[parameters('docuSignPassword')]"
+              },
+              {
+                "name": "docuSignIntegratoryKey",
+                "value": "[parameters('docuSignIntegratoryKey')]"
               }
             ]
           }
